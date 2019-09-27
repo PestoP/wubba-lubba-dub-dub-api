@@ -1,10 +1,13 @@
 <template>
-  <div>character view</div>
+  <div>{{this.character}}</div>
 </template>
 
 <script>
-export default {
+import { mapGetters } from 'vuex'
 
+export default {
+  name: 'Character',
+  computed: mapGetters(['character'])
 }
 </script>
 
