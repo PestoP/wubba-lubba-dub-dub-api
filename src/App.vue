@@ -5,7 +5,8 @@
 <style lang="scss">
 html, body {
   margin: 0;
-  margin-bottom: 20px;
+  padding-bottom: 20px;
+  padding-top: 20px;
 }
 
 #app {
