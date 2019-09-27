@@ -1,7 +1,7 @@
 <template>
   <section class="character">
     <header class="character-header">
-      <img :src='this.character.image' class="character-image"/>
+      <img :src='this.character.image' alt='image profile of the selected character' class="character-image"/>
       <h2 class="character-title">{{this.character.name}}</h2>
     </header>
     <div class="character-body">
