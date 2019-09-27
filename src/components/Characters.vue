@@ -20,8 +20,17 @@
 </template>
 
 <script>
-export default {
+import { mapGetters, mapActions } from 'vuex'
 
+export default {
+  name: 'Characters',
+  computed: mapGetters(['allCharacters']),
+  methods: {
+    ...mapActions(['fetchCharacters', 'fetchCharacter'])
+  },
+  created () {
+    this.fetchCharacters()
+  }
 }
 </script>
 
