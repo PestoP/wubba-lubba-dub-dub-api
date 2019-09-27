@@ -80,7 +80,7 @@ export default {
 
     .character-image {
       width: 100%;
-      height: auto;
+      height: 300px;
       border-top-left-radius: 10px;
       border-right: 1px solid black;
     }
