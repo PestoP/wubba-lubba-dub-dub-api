@@ -2,7 +2,7 @@
   <section class="character">
     <header class="character-header">
       <img :src='this.character.image' class="character-image"/>
-      <h2 class="character-name">{{this.character.name}}</h2>
+      <h2 class="character-title">{{this.character.name}}</h2>
     </header>
     <div class="character-body">
       <p class="character-name">{{this.character.name}}</p>
@@ -31,8 +31,23 @@ export default {
   .character-header {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    height: 45vh;
+    border-bottom: black solid 1px;
+
+    .character-image {
+      width: 100%;
+      height: auto;
+      border-top-left-radius: 10px;
+      border-right: 1px solid black;
+    }
+
+    .character-title {
+      align-self: center;
+      justify-self: center;
+      font-size: 1.5rem;
+      color: #0fadc6;
+    }
   }
+
   .character-body {
     display: grid;
     grid-template-columns: 1fr 1fr;
