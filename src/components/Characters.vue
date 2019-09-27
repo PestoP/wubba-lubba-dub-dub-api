@@ -60,7 +60,7 @@ export default {
 
     .image-card {
       width: 100%;
-      height: auto;
+      height: 300px;
       border-bottom: 1px solid black;
       border-top-left-radius: 10px;
       border-top-right-radius: 10px;
