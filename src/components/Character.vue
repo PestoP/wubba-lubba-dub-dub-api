@@ -102,9 +102,24 @@ export default {
     h3 {
       border-bottom: #0c93a8 1px solid;
       color: #077182;
-      width: 32vw;
+      width: 20rem;
     }
   }
+    // little media for small screen
+    @media screen and (max-width: 500px)  {
+      .character-header {
+        grid-template-columns: 1fr 1fr;
+
+        .character-title {
+          font-size: 1rem;
+        }
+      }
+
+      .character-body {
+        grid-template-columns: 1fr;
+        width: 10rem;
+      }
+    }
 }
 
 </style>
