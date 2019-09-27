@@ -1,7 +1,7 @@
 <template>
   <div class=cards>
     <div class="card" v-for="(n, index) in 10" :key='index'>
-      <img class='image-card' src='' alt="background image portrait for the character card">
+      <img class='image-card' src='https://picsum.photos/300/300' alt="background image portrait for the character card">
       <div class='description-card'>
         <h2>
           name of character
@@ -40,7 +40,11 @@ export default {
     background-color: #e8e8e8;
 
     .image-card {
-      height: 300px;
+      width: 100%;
+      height: auto;
+      border-bottom: 1px solid black;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
     }
 
     .description-card {
