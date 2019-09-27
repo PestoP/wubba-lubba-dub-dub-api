@@ -1,14 +1,14 @@
 <template>
   <div class=cards>
-    <div class="card" v-for="(n, index) in 10" :key='index'>
-      <img class='image-card' src='https://picsum.photos/300/300' alt="background image portrait for the character card">
+    <div class="card" v-for="(card) in this.allCharacters" :key='card.id'>
+      <img class='image-card' :src='card.image' alt="background image portrait for the character card">
       <div class='description-card'>
         <h2 class='title'>
-          name of character
+          {{card.name}}
         </h2>
         <p class="origin-name">
           <span>
-            Origin's Characters : origin earth
+            Origin's Characters : {{card.origin.name}}
           </span>
         </p>
         <button class="button-explore">
