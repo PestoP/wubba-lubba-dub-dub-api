@@ -1,7 +1,7 @@
 <template>
   <div class=cards>
     <div class="card" v-for="(card) in this.allCharacters" :key='card.id'>
-      <img class='image-card' :src='card.image' alt="background image portrait for the character card">
+      <img class='image-card' :src='card.image' alt="background image portrait for the character card" v-on:click='goToCharacter(card.id)'>
       <div class='description-card'>
         <h2 class='title'>
           {{card.name}}
@@ -26,7 +26,11 @@ export default {
   name: 'Characters',
   computed: mapGetters(['allCharacters']),
   methods: {
-    ...mapActions(['fetchCharacters', 'fetchCharacter'])
+    ...mapActions(['fetchCharacters', 'fetchCharacter']),
+    goToCharacter (id) {
+      this.fetchCharacter(id)
+      this.$router.push({ name: 'character', params: { id: id } })
+    }
   },
   created () {
     this.fetchCharacters()
@@ -42,11 +46,10 @@ export default {
   grid-gap: 2rem;
 
   .card {
-    background-color: #fff;
     border: solid black 1px;
     border-radius: 10px;
     box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
-    background-color: #e8e8e8;
+    background-color: #0fadc617;
 
     &:hover {
       .image-card {
