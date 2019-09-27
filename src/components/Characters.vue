@@ -76,6 +76,10 @@ export default {
 
       .button-explore {
         grid-area: explore;
+        justify-content: right;
+        justify-self: end;
+        padding-right: 20px;
+        color: #0fadc6;
       }
     }
   }
