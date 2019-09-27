@@ -59,7 +59,11 @@ export default {
       grid-template-rows: 60px 50px 40px;
 
       .title {
+        margin: 0;
         grid-area: title;
+        padding-top: 10px;
+        padding-left: 10px;
+        text-align: center;
       }
 
       .origin-name {
