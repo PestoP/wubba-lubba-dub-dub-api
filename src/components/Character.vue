@@ -26,6 +26,18 @@ export default {
 }
 </script>
 
-<style>
+<style lang='scss' scoped>
+.character {
+  .character-header {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    height: 45vh;
+  }
+  .character-body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 45vh;
+  }
+}
 
 </style>
