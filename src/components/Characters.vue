@@ -88,6 +88,7 @@ export default {
         grid-area: origin-name;
         margin: 0;
         padding-left: 10px;
+        align-self: center;
       }
 
       .button-explore {
