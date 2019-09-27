@@ -1,6 +1,6 @@
 <template>
   <div class='header'>
-    <h1> Rick and Morty's Character By PestoP</h1>
+    <h1> Rick and Morty's Characters By PestoP</h1>
   </div>
 </template>
 
