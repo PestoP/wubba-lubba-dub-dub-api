@@ -102,7 +102,7 @@ export default {
     h3 {
       border-bottom: #0c93a8 1px solid;
       color: #077182;
-      width: 32vw;
+      width: 20rem;
     }
   }
 }
