@@ -26,5 +26,10 @@ export default {
 </script>
 
 <style>
-
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
+  grid-template-rows: auto;
+  grid-gap: 1rem;
+}
 </style>
