@@ -27,7 +27,7 @@ describe('example', () => {
       character = payload
     }
 
-    await charactersModule.actions.fetchCharacter({ commit: mockCommit })
+    await charactersModule.actions.fetchCharacter({ commit: mockCommit }, 1)
 
     expect(character).not.toBeNull()
     expect(character).toBeDefined()

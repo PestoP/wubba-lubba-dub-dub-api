@@ -18,8 +18,9 @@ export default {
       const response = await axios.get(`https://rickandmortyapi.com/api/character?page=${Math.round((Math.random() * 10))}`)
       commit('setCharacters', response.data.results)
     },
-    async fetchCharacter ({ commit }) {
-      return null
+    async fetchCharacter ({ commit }, id) {
+      const response = await axios.get(`https://rickandmortyapi.com/api/character/${id}`)
+      commit('setCharacter', response.data)
     }
   }
 }
