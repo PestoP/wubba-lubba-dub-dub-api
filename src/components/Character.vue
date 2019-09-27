@@ -71,7 +71,7 @@ export default {
   border: solid black 1px;
   border-radius: 10px;
   box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
-  background-color: #0fadc617;
+  background-color: #07718217;
 
   .character-header {
     display: grid;
@@ -89,7 +89,7 @@ export default {
       align-self: center;
       justify-self: center;
       font-size: 1.5rem;
-      color: #0fadc6;
+      color: #077182;
     }
   }
 
@@ -101,7 +101,7 @@ export default {
 
     h3 {
       border-bottom: #0c93a8 1px solid;
-      color: #0fadc6;
+      color: #077182;
       width: 32vw;
     }
   }
