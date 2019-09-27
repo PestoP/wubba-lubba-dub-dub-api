@@ -70,6 +70,8 @@ export default {
 
       .origin-name {
         grid-area: origin-name;
+        margin: 0;
+        padding-left: 10px;
       }
 
       .button-explore {
