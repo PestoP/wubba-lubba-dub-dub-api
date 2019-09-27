@@ -13,7 +13,6 @@ html, body {
   max-width: 65rem;
   margin-left: auto;
   margin-right: auto;
-  padding: 0 1rem;
 }
 
 // remove button default style
