@@ -1,7 +1,9 @@
 <template>
   <div>
     <Header />
-    <router-view id="app"></router-view>
+    <transition name="fade">
+      <router-view id="app"></router-view>
+    </transition>
     <Footer />
   </div>
 </template>
@@ -41,5 +43,13 @@ button {
   font: inherit;
   cursor: pointer;
   outline: inherit;
+}
+
+.fade-enter-active, .fade-leave-active {
+  transition: opacity 0.25s ease-out;
+}
+
+.fade-enter, .fade-leave-to {
+  opacity: 0;
 }
 </style>
