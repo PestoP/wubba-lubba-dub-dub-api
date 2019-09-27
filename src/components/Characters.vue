@@ -30,7 +30,7 @@ export default {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
   grid-template-rows: auto;
-  grid-gap: 1rem;
+  grid-gap: 2rem;
 
   .card {
     background-color: #fff;
