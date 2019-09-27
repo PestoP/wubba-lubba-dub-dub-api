@@ -3,7 +3,7 @@
     <div class="card" v-for="(n, index) in 10" :key='index'>
       <img class='image-card' src='https://picsum.photos/300/300' alt="background image portrait for the character card">
       <div class='description-card'>
-        <h2>
+        <h2 class='title'>
           name of character
         </h2>
         <p class="origin-name">
@@ -49,6 +49,26 @@ export default {
 
     .description-card {
       height: 150px;
+      position: relative;
+      top: -5px;
+      display: grid;
+      grid-template-areas: 'title title'
+                  'origin-name origin-name'
+                  '. explore';
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 60px 50px 40px;
+
+      .title {
+        grid-area: title;
+      }
+
+      .origin-name {
+        grid-area: origin-name;
+      }
+
+      .button-explore {
+        grid-area: explore;
+      }
     }
   }
 }
