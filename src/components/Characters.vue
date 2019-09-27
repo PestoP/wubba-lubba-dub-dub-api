@@ -64,6 +64,8 @@ export default {
         padding-top: 10px;
         padding-left: 10px;
         text-align: center;
+        font-size: 1.5rem;
+        color: #0fadc6;
       }
 
       .origin-name {
