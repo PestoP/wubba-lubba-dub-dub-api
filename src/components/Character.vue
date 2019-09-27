@@ -5,14 +5,54 @@
       <h2 class="character-title">{{this.character.name}}</h2>
     </header>
     <div class="character-body">
-      <p class="character-name">{{this.character.name}}</p>
-      <p class="character-status">{{this.character.status}}</p>
-      <p class="character-species">{{this.character.species}}</p>
-      <p class="character-type">{{this.character.type}}</p>
-      <p class="character-gender">{{this.character.gender}}</p>
-      <p class="character-origin">{{this.character.origin}}</p>
-      <p class="character-episodes">{{this.character.episode}}</p>
-      <p class="character-url">{{this.character.url}}</p>
+      <div class="character-name">
+        <h3>Name</h3>
+        <p>
+          {{this.character.name}}
+        </p>
+      </div>
+      <div class="character-status">
+        <h3>Status</h3>
+        <p>
+          {{this.character.status}}
+        </p>
+      </div>
+      <div class="character-species">
+        <h3>Species</h3>
+        <p>
+          {{this.character.species}}
+        </p>
+      </div>
+      <div class="character-type">
+        <h3>Type</h3>
+        <p>
+          {{this.character.type}}
+        </p>
+      </div>
+      <div class="character-gender">
+        <h3>Gender</h3>
+        <p>
+          {{this.character.gender}}
+        </p>
+      </div>
+      <div class="character-origin">
+        <h3>Origin</h3>
+        <p>
+          {{this.character.origin}}
+        </p>
+      </div>
+      <div class="character-episode">
+        <h3>Episodes</h3>
+        <p>
+          {{this.character.episode}}
+        </p>
+      </div>
+      <div class="character-url">
+        <h3>Url</h3>
+        <p>
+          {{this.character.url}}
+        </p>
+      </div>
     </div>
   </section>
 </template>
@@ -28,6 +68,7 @@ export default {
 
 <style lang='scss' scoped>
 .character {
+
   .character-header {
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -51,7 +92,14 @@ export default {
   .character-body {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    height: 45vh;
+    padding: 5vw;
+    grid-row-gap: 2vh;
+
+    h3 {
+      border-bottom: #0c93a8 1px solid;
+      color: #0fadc6;
+      width: 32vw;
+    }
   }
 }
 
