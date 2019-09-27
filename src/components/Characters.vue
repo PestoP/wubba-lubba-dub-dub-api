@@ -39,6 +39,13 @@ export default {
     box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
     background-color: #e8e8e8;
 
+    &:hover {
+      .image-card {
+        opacity: 0.8;
+      }
+      cursor: pointer;
+    }
+
     .image-card {
       width: 100%;
       height: auto;
