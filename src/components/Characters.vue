@@ -1,7 +1,7 @@
 <template>
   <div class=cards>
     <div class="card" v-for="(card) in this.allCharacters" :key='card.id'>
-      <img class='image-card' :src='card.image' alt="background image portrait for the character card">
+      <img class='image-card' :src='card.image' alt="background image portrait for the character card" v-on:click='goToCharacter(card.id)'>
       <div class='description-card'>
         <h2 class='title'>
           {{card.name}}
@@ -26,7 +26,11 @@ export default {
   name: 'Characters',
   computed: mapGetters(['allCharacters']),
   methods: {
-    ...mapActions(['fetchCharacters', 'fetchCharacter'])
+    ...mapActions(['fetchCharacters', 'fetchCharacter']),
+    goToCharacter (id) {
+      this.fetchCharacter(id)
+      this.$router.push({ name: 'character', params: { id: id } })
+    }
   },
   created () {
     this.fetchCharacters()
