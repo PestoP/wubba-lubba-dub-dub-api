@@ -6,5 +6,8 @@ export default {
   mutations: {
   },
   actions: {
+    async fetchCharacters () {
+      return null
+    }
   }
 }
