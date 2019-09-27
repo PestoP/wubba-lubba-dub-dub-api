@@ -68,6 +68,7 @@ export default {
 
 <style lang='scss' scoped>
 .character {
+  background-color: #0fadc617;
 
   .character-header {
     display: grid;
